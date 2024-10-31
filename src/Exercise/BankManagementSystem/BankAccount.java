@@ -10,14 +10,14 @@ public class BankAccount {
 
     public BankAccount() {}
 
-    public double deposit(double amount) {
+    protected double deposit(double amount) {
         this.accountBalance += amount;
 
         return this.accountBalance;
     }
 
 
-    public double withdraw(int amount) {
+    protected double withdraw(double amount) {
         double result = (double)(this.accountBalance - (double) (amount));
         System.out.println(result);
         return result;

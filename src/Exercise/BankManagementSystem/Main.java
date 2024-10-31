@@ -3,18 +3,17 @@ package Exercise.BankManagementSystem;
 
 public class Main {
     public static void main(String[] args) throws Exception {
+        try{
 
-        SavingAccount account = new SavingAccount(2000);
+            CurrentAccount account = new CurrentAccount(1000000);
 
-        System.out.println(account.accountBalance);
+            System.out.println(account.accountBalance);
 
-        account.deposit(20000);
+            account.withdrawAmount(1000000000);
 
-        System.out.println(account.accountBalance);
-
-        account.withdraw(16000);
-
-        System.out.println(account.accountBalance);
-
+            System.out.println(account.accountBalance);
+        }catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
