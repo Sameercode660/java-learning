@@ -1,2 +1,1 @@
-public class String {
-}
+public class String {}
